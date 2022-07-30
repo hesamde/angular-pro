@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
-const routes: Routes = [];
+import { ListComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+
+
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [ ListComponent],
+  imports: [BrowserModule,FormsModule],
 })
 export class AppRoutingModule { }
